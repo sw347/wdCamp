@@ -7,12 +7,8 @@ const port = 7321;
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/public/index.html"));
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
-
-// app.get("/", (req, res) => {
-//   res.sendFile("/spark.js");
-// });
 
 app.listen(port, () => {
   console.log(`server is on... localhost:${port}`);
