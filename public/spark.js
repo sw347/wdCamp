@@ -110,6 +110,7 @@ function Reset() {
       td.textContent = "";
     });
   });
+  count = 0;
 }
 
 for (let i = 0; i < 3; i++) {
